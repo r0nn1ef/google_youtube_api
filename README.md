@@ -25,10 +25,13 @@ guide on [Drupal.org](https://www.drupal.org).
 
 ## Configuration
 
-Configure the Google API PHP Client with the following scope (minimum):
+Configure the Google API PHP Client with the following scopes (minimum):
 
 * https://www.googleapis.com/auth/youtube
 * https://www.googleapis.com/auth/youtube.upload (only required for editing title, description, tags, or uploading video files)
+
+See [https://developers.google.com/identity/protocols/googlescopes#youtubev3](https://developers.google.com/identity/protocols/googlescopes#youtubev3) for
+available scopes.
 
 ## Troubleshooting
 
