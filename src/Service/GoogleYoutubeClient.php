@@ -81,8 +81,8 @@ class GoogleYoutubeClient {
     ]);
 
     // Set up the YouTube Client that interacts with the API.
-    $googleServicePhotosLibrary = new \Google_Service_YouTube($this->googleApiClient->googleClient);
-    return $googleServicePhotosLibrary;
+    $googleServiceYoutube = new \Google_Service_YouTube($this->googleApiClient->googleClient);
+    return $googleServiceYoutube;
   }
 
 }
