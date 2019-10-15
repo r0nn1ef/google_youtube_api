@@ -2,11 +2,9 @@
    
  * Introduction
  * Requirements
- * Recommended modules
  * Installation
  * Configuration
  * Troubleshooting
- * FAQ
  * Maintainers
  
 ## Introduction
@@ -20,15 +18,22 @@ custom modules to communicate with YouTube using the YouTube v3 API using existi
 Google YouTube API is built upon the [Google API Client](https://www.drupal.org/project/google_api_client) module which
 is required to be before this module will function.
 
-## Recommended modules
-
 ## Installation
+
+Install the module following the standard [Drupal 8 module installation](https://www.drupal.org/docs/8/extending-drupal-8/installing-drupal-8-modules)
+guide on [Drupal.org](https://www.drupal.org).
 
 ## Configuration
 
+Configure the Google API PHP Client with the following scope (minimum):
+
+* https://www.googleapis.com/auth/youtube
+* https://www.googleapis.com/auth/youtube.upload (only required for editing title, description, tags, or uploading video files)
+
 ## Troubleshooting
 
-## FAQ
+* First, ensure that the Google API client module has the appropriate settings and scopes.
+* Consult the Google PHP API Library documentation for methods and parameters for working with videos and other YouTube content.
 
 ## Maintainers
 
