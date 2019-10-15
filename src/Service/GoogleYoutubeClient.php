@@ -74,7 +74,11 @@ class GoogleYoutubeClient {
    *   Google Service YouTube.
    */
   private function getGoogleServiceYoutube() {
-    $this->googleApiClient->googleClient->setScopes(["https://www.googleapis.com/auth/youtube", "https://www.googleapis.com/auth/youtubepartner", "https://www.googleapis.com/auth/youtube.upload"]);
+    $this->googleApiClient->googleClient->setScopes([
+      "https://www.googleapis.com/auth/youtube",
+      "https://www.googleapis.com/auth/youtubepartner",
+      "https://www.googleapis.com/auth/youtube.upload",
+    ]);
 
     // Set up the YouTube Client that interacts with the API.
     $googleServicePhotosLibrary = new \Google_Service_YouTube($this->googleApiClient->googleClient);
