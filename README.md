@@ -4,6 +4,7 @@
  * Requirements
  * Installation
  * Configuration
+ * Usage
  * Troubleshooting
  * Maintainers
  
@@ -29,6 +30,26 @@ Configure the Google API PHP Client with the following scopes (minimum):
 
 * https://www.googleapis.com/auth/youtube
 * https://www.googleapis.com/auth/youtube.upload (only required for editing title, description, tags, or uploading video files)
+
+## Usage
+
+Using the Google YouTube API is relatively straight forward. Below demonstrates how to retrieve a video object using the
+API.
+
+```php
+$video = NULL;
+$GoogleYoutubeService = \Drupal::service('google_youtube_api.client');
+  try {
+    $videos = $GoogleYoutubeService->googleServiceYouTube->videos->listVideos('snippet', ['id' => $id]);
+    if( count($videos->items) > 0 ) {
+      $video = array_shift( $videos->items );
+    }
+  }
+  catch (Exception $e) {
+    \Drupal::logger('module_name')->error( $e->getMessage() );
+    \Drupal::messenger()->addError( $e->getMessage() );
+  }
+```
 
 See [https://developers.google.com/identity/protocols/googlescopes#youtubev3](https://developers.google.com/identity/protocols/googlescopes#youtubev3) for
 available scopes.
