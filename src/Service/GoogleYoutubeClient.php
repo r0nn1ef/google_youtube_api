@@ -79,7 +79,13 @@ class GoogleYoutubeClient {
     if (is_array($parts)) {
       $parts = implode(',', $parts);
     }
-    return $this->googleServiceYouTube->videos->listVideos($parts, $optParams);
+    $result = FALSE;
+    try {
+      $result = $this->googleServiceYouTube->videos->listVideos($parts, $optParams);
+    } catch (\Exception $e) {
+      $this->loggerFactory->get('google_youtube_api')->error($e->getMessage());
+    }
+    return $result;
   }
 
   /**
@@ -94,7 +100,13 @@ class GoogleYoutubeClient {
     if (is_array($parts)) {
       $parts = implode(',', $parts);
     }
-    return $this->googleServiceYouTube->videos->update($parts, $video);
+    $result = FALSE;
+    try {
+      $result = $this->googleServiceYouTube->videos->update($parts, $video);
+    } catch (\Exception $e) {
+      $this->loggerFactory->get('google_youtube_api')->error($e->getMessage());
+    }
+    return $result;
   }
 
   /**
@@ -106,7 +118,13 @@ class GoogleYoutubeClient {
    * @return mixed
    */
   public function delete($id, $optParams = []) {
-    return $this->googleServiceYouTube->videos->delete($id, $optParams);
+    $result = FALSE;
+    try {
+      $result = $this->googleServiceYouTube->videos->delete($id, $optParams);
+    } catch (\Exception $e) {
+      $this->loggerFactory->get('google_youtube_api')->error($e->getMessage());
+    }
+    return $result;
   }
 
   /**
@@ -119,7 +137,13 @@ class GoogleYoutubeClient {
    * @return mixed
    */
   public function insert($part, \Google_Service_YouTube_Video $postBody, $optParams = []) {
-    return $this->googleServiceYouTube->videos->insert($part, $postBody, $optParams);
+    $result = FALSE;
+    try {
+      $result = $this->googleServiceYouTube->videos->insert($part, $postBody, $optParams);
+    } catch (\Exception $e) {
+      $this->loggerFactory->get('google_youtube_api')->error($e->getMessage());
+    }
+    return $result;
   }
 
   /**
@@ -132,7 +156,13 @@ class GoogleYoutubeClient {
    * @return mixed
    */
   public function rate($id, $rating, $optParams = []) {
-    return $this->googleServiceYouTube->videos->rate($id, $rating, $optParams);
+    $result = FALSE;
+    try {
+      $result = $this->googleServiceYouTube->videos->rate($id, $rating, $optParams);
+    } catch (\Exception $e) {
+      $this->loggerFactory->get('google_youtube_api')->error($e->getMessage());
+    }
+    return $result;
   }
 
   /**
@@ -144,7 +174,13 @@ class GoogleYoutubeClient {
    * @return mixed
    */
   public function getRating($id, $optParams = []) {
-    return $this->googleServiceYouTube->videos->getRating($id, $optParams);
+    $result = FALSE;
+    try {
+      $result = $this->googleServiceYouTube->videos->getRating($id, $optParams);
+    } catch (\Exception $e) {
+      $this->loggerFactory->get('google_youtube_api')->error($e->getMessage());
+    }
+    return $result;
   }
 
   /**
@@ -156,7 +192,13 @@ class GoogleYoutubeClient {
    * @return mixed
    */
   public function reportAbuse(\Google_Service_YouTube_VideoAbuseReport $postBody, $optParams = []) {
-    return $this->googleServiceYouTube->videos->reportAbuse($postBody, $optParams);
+    $result = FALSE;
+    try {
+      $result = $this->googleServiceYouTube->videos->reportAbuse($postBody, $optParams);
+    } catch (\Exception $e) {
+      $this->loggerFactory->get('google_youtube_api')->error($e->getMessage());
+    }
+    return $result;
   }
 
   /**
