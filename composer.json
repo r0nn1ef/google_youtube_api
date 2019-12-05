@@ -1,15 +1,14 @@
 {
-  "name": "google_youtube_api",
+  "name": "drupal/google_youtube_api",
   "type": "drupal-module",
   "description": "YouTube API integration module.",
   "keywords": [
+    "Drupal",
+    "YouTube",
+    "API"
   ],
-  "homepage": "https://www.drupal.org/project/google_youtube_api",
+  "homepage": "https://www.drupal.org/sandbox/r0nn1ef/3088112",
   "minimum-stability": "dev",
-  "support": {
-    "issues": "https://www.drupal.org/project/issues/google_youtube_api",
-    "source": "http://cgit.drupalcode.org/google_youtube_api"
-  },
   "require": {
     "drupal/google_api_client": "^1.0"
   }

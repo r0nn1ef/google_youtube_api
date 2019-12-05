@@ -16,7 +16,7 @@ custom modules to communicate with YouTube using the YouTube v3 API using existi
 
 ## Requirements
 
-Google YouTube API is built upon the [Google API Client](https://www.drupal.org/project/google_api_client) module which
+Google YouTube API is built upon the [Google API Client](https://github.com/kcmus/google_api_client) module which
 is required to be before this module will function.
 
 ## Installation
