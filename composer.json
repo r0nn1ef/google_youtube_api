@@ -11,18 +11,5 @@
   "minimum-stability": "dev",
   "require": {
     "drupal/google_api_client": "^1.0"
-  },
-  "repositories": {
-    "type": "package",
-    "package": {
-      "name": "drupal/google_youtube_api",
-      "version": "8.1.0-alpha",
-      "type": "drupal-module",
-      "source": {
-        "url": "https://git.drupal.org/sandbox/energee/3088112.git",
-        "type": "git",
-        "reference": "refs/heads/8.x-dev"
-      }
-    }
   }
 }
