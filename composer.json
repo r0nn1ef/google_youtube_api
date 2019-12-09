@@ -1,6 +1,6 @@
 {
   "name": "drupal/google_youtube_api",
-  "type": "drupal-module",
+  "type": "drupal-custom-module",
   "description": "YouTube API integration module.",
   "keywords": [
     "Drupal",
