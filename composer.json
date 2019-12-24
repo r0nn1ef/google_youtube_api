@@ -10,6 +10,5 @@
   "homepage": "https://www.drupal.org/sandbox/r0nn1ef/3088112",
   "minimum-stability": "dev",
   "require": {
-    "drupal/google_api_client": "^1.0"
   }
 }
