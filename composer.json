@@ -7,6 +7,11 @@
     "YouTube",
     "API"
   ],
+  "extra": {
+    "branch-alias": {
+      "8.x-dev": "dev-1.0.x"
+    }
+  },
   "homepage": "https://www.drupal.org/sandbox/r0nn1ef/3088112",
   "minimum-stability": "dev",
   "require": {
