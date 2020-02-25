@@ -1,5 +1,5 @@
 {
-  "name": "drupal/google_youtube_api",
+  "name": "r0nn1ef/google_youtube_api",
   "type": "drupal-custom-module",
   "description": "YouTube API integration module.",
   "keywords": [
@@ -12,7 +12,7 @@
       "8.x-dev": "dev-1.0.x"
     }
   },
-  "homepage": "https://www.drupal.org/sandbox/r0nn1ef/3088112",
+  "homepage": "https://github.com/r0nn1ef/google_youtube_api",
   "minimum-stability": "dev",
   "require": {
   }
