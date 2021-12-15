@@ -1,7 +1,7 @@
 name: 'Google YouTube API'
 type: module
 description: 'YouTube API integration module.'
-core: 8.x
+core_version_requirement: ^8 || ^9
 package: 'Google'
 dependencies:
   - google_api_client:google_api_client
